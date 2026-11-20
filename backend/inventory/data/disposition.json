@@ -1,0 +1,6 @@
+{
+  "proposed": { "id": "proposed", "label": "Awaiting approval" },
+  "approved": { "id": "approved", "label": "Approved" },
+  "rejected": { "id": "rejected", "label": "Rejected" },
+  "cancelled": { "id": "cancelled", "label": "Cancelled" }
+}

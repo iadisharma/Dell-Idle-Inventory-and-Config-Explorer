@@ -1,0 +1,222 @@
+{
+  "asOf": "2026-11-20",
+  "defaultIdleDays": 90,
+  "idleWindows": [30, 60, 90, 120, 180],
+  "analytics": {
+    "currency": "USD",
+    "trendWeeks": 8,
+    "unitCostCents": {
+      "SSD-512-2230": 5400, "RAM-16-DDR5": 4200, "PRO-14-PLUS": 112000,
+      "PRO-16-PLUS": 132000, "DOCK-WD22TB4": 18500, "MON-U2723QE": 41000,
+      "MS7421W": 4500, "KB700": 5500, "ADP-65-USBC": 3200
+    }
+  },
+  "warehouses": [
+    { "id": "wh-aus", "name": "Austin", "code": "AUS" },
+    { "id": "wh-blr", "name": "Bengaluru", "code": "BLR" },
+    { "id": "wh-lim", "name": "Limerick", "code": "LIM" }
+  ],
+  "routes": [
+    { "id": "demand-check", "label": "Demand planning" },
+    { "id": "catalog-review", "label": "Catalog review" }
+  ],
+  "statuses": [
+    { "id": "open", "label": "Open", "initial": true, "terminal": false, "next": ["in-progress", "resolved"] },
+    { "id": "in-progress", "label": "In progress", "initial": false, "terminal": false, "next": ["resolved"] },
+    { "id": "resolved", "label": "Resolved", "initial": false, "terminal": true, "next": [] }
+  ],
+  "accounts": [
+    { "id": "aus-ssd", "sku": "SSD-512-2230", "warehouseId": "wh-aus" },
+    { "id": "blr-ram", "sku": "RAM-16-DDR5", "warehouseId": "wh-blr" },
+    { "id": "aus-dock", "sku": "DOCK-WD22TB4", "warehouseId": "wh-aus" },
+    { "id": "lim-monitor", "sku": "MON-U2723QE", "warehouseId": "wh-lim" },
+    {
+      "id": "blr-pro14", "sku": "PRO-14-PLUS", "warehouseId": "wh-blr", "configurationId": "cfg-pro14",
+      "recordedBuild": {
+        "orderCode": "DEMO-P14-001",
+        "chassis": "PB14250",
+        "components": [
+          { "sku": "SSD-512-2230", "module": "Storage", "option": "512 GB M.2 NVMe SSD" },
+          { "sku": "RAM-16-DDR5", "module": "Memory", "option": "16 GB DDR5 SODIMM" }
+        ]
+      }
+    },
+    {
+      "id": "aus-pro16", "sku": "PRO-16-PLUS", "warehouseId": "wh-aus", "configurationId": "cfg-pro16",
+      "recordedBuild": {
+        "orderCode": "DEMO-P16-001",
+        "chassis": "PB16250",
+        "components": [
+          { "sku": "SSD-512-2230", "module": "Storage", "option": "512 GB M.2 NVMe SSD" },
+          { "sku": "RAM-16-DDR5", "module": "Memory", "option": "16 GB DDR5 SODIMM" }
+        ]
+      }
+    },
+    { "id": "lim-keyboard", "sku": "KB700", "warehouseId": "wh-lim" },
+    { "id": "blr-mouse", "sku": "MS7421W", "warehouseId": "wh-blr" },
+    { "id": "aus-adapter", "sku": "ADP-65-USBC", "warehouseId": "wh-aus" },
+    { "id": "blr-ssd", "sku": "SSD-512-2230", "warehouseId": "wh-blr" }
+  ],
+  "movements": [
+    { "id": "mov-001", "itemId": "aus-ssd", "date": "2026-05-05", "type": "receipt", "units": 50 },
+    { "id": "mov-002", "itemId": "aus-ssd", "date": "2026-06-18", "type": "consumption", "units": 10 },
+    { "id": "mov-003", "itemId": "blr-ram", "date": "2026-06-30", "type": "receipt", "units": 38 },
+    { "id": "mov-004", "itemId": "blr-ram", "date": "2026-07-12", "type": "consumption", "units": 6 },
+    { "id": "mov-005", "itemId": "aus-dock", "date": "2026-07-22", "type": "receipt", "units": 18 },
+    { "id": "mov-006", "itemId": "lim-monitor", "date": "2026-06-10", "type": "receipt", "units": 12 },
+    { "id": "mov-007", "itemId": "lim-monitor", "date": "2026-08-01", "type": "consumption", "units": 4 },
+    { "id": "mov-008", "itemId": "blr-pro14", "date": "2026-08-15", "type": "receipt", "units": 12 },
+    { "id": "mov-009", "itemId": "aus-pro16", "date": "2026-07-08", "type": "receipt", "units": 10 },
+    { "id": "mov-010", "itemId": "aus-pro16", "date": "2026-08-22", "type": "consumption", "units": 3 },
+    { "id": "mov-011", "itemId": "lim-keyboard", "date": "2026-06-18", "type": "receipt", "units": 22 },
+    { "id": "mov-012", "itemId": "lim-keyboard", "date": "2026-08-06", "type": "consumption", "units": 4 },
+    { "id": "mov-013", "itemId": "blr-mouse", "date": "2026-10-06", "type": "receipt", "units": 30 },
+    { "id": "mov-014", "itemId": "aus-adapter", "date": "2026-07-24", "type": "receipt", "units": 24 },
+    { "id": "mov-015", "itemId": "aus-adapter", "date": "2026-09-24", "type": "consumption", "units": 8 },
+    { "id": "mov-016", "itemId": "blr-ssd", "date": "2026-11-12", "type": "receipt", "units": 20 }
+  ],
+  "seedReviews": [
+    {
+      "id": "review-lim-monitor",
+      "itemId": "lim-monitor",
+      "owner": "A. Patel",
+      "route": "demand-check",
+      "status": "in-progress",
+      "note": "Check upcoming display requirements before the next replenishment.",
+      "outcome": "",
+      "createdAt": "2026-11-16T10:00:00.000Z",
+      "updatedAt": "2026-11-17T09:30:00.000Z",
+      "stockAtCreation": { "sku": "MON-U2723QE", "warehouseId": "wh-lim", "quantity": 8, "idleDays": 107 },
+      "history": [
+        { "status": "open", "at": "2026-11-16T10:00:00.000Z", "note": "Check upcoming display requirements before the next replenishment." },
+        { "status": "in-progress", "at": "2026-11-17T09:30:00.000Z", "note": "Planning team is checking workstation requests." }
+      ]
+    },
+    {
+      "id": "review-lim-keyboard",
+      "itemId": "lim-keyboard",
+      "owner": "J. Lee",
+      "route": "catalog-review",
+      "status": "resolved",
+      "note": "Verify whether this accessory has an order-code mapping.",
+      "outcome": "Catalog team confirmed this accessory can be listed separately.",
+      "createdAt": "2026-11-12T14:00:00.000Z",
+      "updatedAt": "2026-11-16T15:45:00.000Z",
+      "stockAtCreation": { "sku": "KB700", "warehouseId": "wh-lim", "quantity": 18, "idleDays": 98 },
+      "history": [
+        { "status": "open", "at": "2026-11-12T14:00:00.000Z", "note": "Verify whether this accessory has an order-code mapping." },
+        { "status": "resolved", "at": "2026-11-16T15:45:00.000Z", "note": "Catalog team confirmed this accessory can be listed separately." }
+      ]
+    },
+    {
+      "id": "sample-blr-ram",
+      "itemId": "blr-ram",
+      "owner": "Jordan Lewis",
+      "route": "demand-check",
+      "status": "proposed",
+      "dispositionStage": "proposed",
+      "note": "Review unused stock against this week’s deployment requests.",
+      "outcome": "",
+      "version": 2,
+      "createdAt": "2026-11-18T09:00:00.000Z",
+      "updatedAt": "2026-11-19T10:00:00.000Z",
+      "stockAtCreation": {
+        "sku": "RAM-16-DDR5",
+        "warehouseId": "wh-blr",
+        "quantity": 32,
+        "idleDays": 129,
+        "asOf": "2026-11-18"
+      },
+      "proposal": {
+        "quantity": 8,
+        "note": "Reserve eight memory modules for the upcoming laptop repair batch.",
+        "actorId": "demo-planner",
+        "actorName": "Jordan Lewis",
+        "at": "2026-11-19T10:00:00.000Z"
+      },
+      "history": [
+        {
+          "action": "create",
+          "status": "open",
+          "at": "2026-11-18T09:00:00.000Z",
+          "note": "Review unused stock against this week’s deployment requests.",
+          "actorId": "demo-analyst",
+          "actorName": "Avery Chen"
+        },
+        {
+          "action": "propose",
+          "status": "proposed",
+          "at": "2026-11-19T10:00:00.000Z",
+          "note": "Reserve eight memory modules for the upcoming laptop repair batch.",
+          "actorId": "demo-planner",
+          "actorName": "Jordan Lewis",
+          "quantity": 8
+        }
+      ]
+    },
+    {
+      "id": "sample-aus-dock",
+      "itemId": "aus-dock",
+      "owner": "Jordan Lewis",
+      "route": "demand-check",
+      "status": "approved",
+      "dispositionStage": "approved",
+      "note": "Review unused stock against this week’s deployment requests.",
+      "outcome": "",
+      "version": 3,
+      "createdAt": "2026-11-18T09:00:00.000Z",
+      "updatedAt": "2026-11-19T15:00:00.000Z",
+      "stockAtCreation": {
+        "sku": "DOCK-WD22TB4",
+        "warehouseId": "wh-aus",
+        "quantity": 18,
+        "idleDays": 119,
+        "asOf": "2026-11-18"
+      },
+      "proposal": {
+        "quantity": 4,
+        "note": "Issue four docks to the desktop deployment team for staged workstations.",
+        "actorId": "demo-planner",
+        "actorName": "Jordan Lewis",
+        "at": "2026-11-19T10:00:00.000Z"
+      },
+      "history": [
+        {
+          "action": "create",
+          "status": "open",
+          "at": "2026-11-18T09:00:00.000Z",
+          "note": "Review unused stock against this week’s deployment requests.",
+          "actorId": "demo-analyst",
+          "actorName": "Avery Chen"
+        },
+        {
+          "action": "propose",
+          "status": "proposed",
+          "at": "2026-11-19T10:00:00.000Z",
+          "note": "Issue four docks to the desktop deployment team for staged workstations.",
+          "actorId": "demo-planner",
+          "actorName": "Jordan Lewis",
+          "quantity": 4
+        },
+        {
+          "action": "approve",
+          "status": "approved",
+          "at": "2026-11-19T15:00:00.000Z",
+          "note": "Deployment owner confirmed demand. Issue the proposed quantity.",
+          "actorId": "demo-manager",
+          "actorName": "Maya Patel",
+          "quantity": 4
+        }
+      ],
+      "decision": {
+        "action": "approve",
+        "status": "approved",
+        "at": "2026-11-19T15:00:00.000Z",
+        "note": "Deployment owner confirmed demand. Issue the proposed quantity.",
+        "actorId": "demo-manager",
+        "actorName": "Maya Patel",
+        "quantity": 4
+      }
+    }
+  ]
+}

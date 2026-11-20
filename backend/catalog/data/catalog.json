@@ -1,0 +1,260 @@
+{
+  "provenance": {
+    "products": "Dell public product listings and support documents. The model identifies a Dell model or part number. The SKU is a local demo identifier. Catalog status describes the demo.",
+    "images": "Illustrative product photos from Dell. The original URL is recorded with each product.",
+    "configurations": "Synthetic training configurations and option paths. DEMO order codes are local identifiers. Options can represent alternative bundles or replacement parts."
+  },
+  "products": [
+    {
+      "sku": "SSD-512-2230",
+      "name": "Dell 512 GB M.2 NVMe SSD",
+      "category": "Storage",
+      "model": "AC280178",
+      "description": "A PCIe Gen4 solid-state drive in the compact M.2 2230 format.",
+      "specs": {
+        "Capacity": "512 GB",
+        "Form factor": "M.2 2230",
+        "Interface": "PCIe Gen4 x4 NVMe",
+        "Flash": "TLC"
+      },
+      "sourceUrl": "https://www.dell.com/support/manuals/en-us/dell-pro-pb14250-2-in-1-laptop/dellpro-14-plus_om_arl/storage?guid=guid-d79f17ca-e619-43e7-82a5-a0b0e7fb5c0a&lang=en-us",
+      "imageUrl": "/product-images/ssd.jpg",
+      "imageSourceUrl": "https://snpi.dell.com/snp/images/products/large/en-us~AC280178/AC280178.jpg",
+      "status": "Active",
+      "originalListingUrl": "https://www.dell.com/en-us/shop/dell-m2-pcie-nvme-gen-4x4-class-35-2230-solid-state-drive-512gb/apd/ac280178/storage-drives-media"
+    },
+    {
+      "sku": "RAM-16-DDR5",
+      "name": "Dell 16 GB DDR5 Memory",
+      "category": "Memory",
+      "model": "AC774048",
+      "description": "A single 16 GB laptop memory module for compatible SODIMM slots.",
+      "specs": {
+        "Capacity": "16 GB",
+        "Speed": "5600 MT/s",
+        "Form factor": "DDR5 SODIMM",
+        "Organization": "1Rx8"
+      },
+      "sourceUrl": "https://www.dell.com/support/manuals/en-us/dell-pro-pb14250-2-in-1-laptop/dellpro-14-plus_om_arl/memory?guid=guid-e9d2ea83-38a4-431d-803c-96d63c1dbc34&lang=en-us",
+      "imageUrl": "/product-images/ram.jpg",
+      "imageSourceUrl": "https://snpi.dell.com/snp/images/products/large/en-us~AC774048/AC774048.jpg",
+      "status": "Active",
+      "originalListingUrl": "https://www.dell.com/en-ca/shop/dell-memory-upgrade-16-gb-1rx8-ddr5-sodimm-5600-mt-s/apd/ac774048/memory"
+    },
+    {
+      "sku": "PRO-14-PLUS",
+      "name": "Dell Pro 14 Plus",
+      "category": "Laptops",
+      "model": "PB14250",
+      "description": "A 14-inch business notebook in the Dell Pro Plus family.",
+      "specs": {
+        "Family": "Dell Pro Plus",
+        "Display size": "14 inches",
+        "Form factor": "Notebook"
+      },
+      "sourceUrl": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellproplus14laptoppb14250/pb14250_so_27",
+      "imageUrl": "/product-images/pro14.png",
+      "imageSourceUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro-plus/pb14250/media-gallery/non-touch/55mm/laptop-dellpro-pb14520nt-gy-fpr-55mm-gallery-2.psd?fmt=png-alpha&wid=540",
+      "status": "Active"
+    },
+    {
+      "sku": "PRO-16-PLUS",
+      "name": "Dell Pro 16 Plus",
+      "category": "Laptops",
+      "model": "PB16250",
+      "description": "A 16-inch Dell Pro Plus business notebook with a full-size keyboard.",
+      "specs": {
+        "Family": "Dell Pro Plus",
+        "Display size": "16 inches",
+        "Form factor": "Notebook"
+      },
+      "sourceUrl": "https://www.dell.com/en-us/shop/laptop-computers/spd/dellproplus16laptoppb16250/pb16250_so_37",
+      "imageUrl": "/product-images/pro16.png",
+      "imageSourceUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/dell-pro-plus/pb16250/media-gallery/notebook-pb16250-nt-c-gy-fpr-mipi-5mp-gallery-2.psd?fmt=png-alpha&wid=540",
+      "status": "Active"
+    },
+    {
+      "sku": "DOCK-WD22TB4",
+      "name": "Dell Thunderbolt Dock",
+      "category": "Docks",
+      "model": "WD22TB4",
+      "description": "A wired Thunderbolt 4 dock for a desk setup with displays, networking, and peripherals.",
+      "specs": {
+        "Connection": "Thunderbolt 4",
+        "Form factor": "Desktop dock",
+        "Series": "WD22TB4"
+      },
+      "sourceUrl": "https://www.dell.com/support/product-details/en-us/product/wd22tb4-dock/resources/manuals",
+      "imageUrl": "/product-images/dock.png",
+      "imageSourceUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/docks/dell-thunderbolt-4-dock-wd22tb4/spi/ng/dock-wd22tb4-black-campaign-hero-504x350-ng.psd?fmt=jpg&wid=620&qlt=85",
+      "status": "Active"
+    },
+    {
+      "sku": "MON-U2723QE",
+      "name": "Dell UltraSharp 27 4K USB-C Hub Monitor",
+      "category": "Monitors",
+      "model": "U2723QE",
+      "description": "A 27-inch 4K display with an integrated USB-C hub and IPS Black panel.",
+      "specs": {
+        "Display size": "27 inches",
+        "Resolution": "3840 × 2160",
+        "Refresh rate": "60 Hz",
+        "Panel": "IPS Black"
+      },
+      "sourceUrl": "https://www.dell.com/en-us/shop/dell-ultrasharp-27-4k-usb-c-hub-monitor-u2723qe/apd/210-bdpf/",
+      "imageUrl": "/product-images/monitor.png",
+      "imageSourceUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/u-series/u2723qe/spi/ng/monitor-u2723qe-relsize-500-ng.psd?fmt=jpg&wid=620&qlt=85",
+      "status": "Active"
+    },
+    {
+      "sku": "MS7421W",
+      "name": "Dell Pro Premium Compact Mouse",
+      "category": "Mice",
+      "model": "MS7421W",
+      "description": "A compact rechargeable wireless mouse with adjustable pointer sensitivity.",
+      "specs": {
+        "Sensor range": "1000–4000 DPI",
+        "Buttons": "7",
+        "Finish": "Platinum Silver",
+        "Charging": "USB-C"
+      },
+      "sourceUrl": "https://www.dell.com/support/product-details/en-us/product/dell-premier-rechrgble-wir-mouse-ms7421w",
+      "imageUrl": "/product-images/mouse.jpg",
+      "imageSourceUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/peripherals/input-devices/dell/mouse/ms7421w/general/ms7421w_pkg_01.jpg?fmt=jpg&wid=620&qlt=85",
+      "status": "Active"
+    },
+    {
+      "sku": "KB700",
+      "name": "Dell Pro Plus Keyboard",
+      "category": "Keyboards",
+      "model": "KB700",
+      "description": "A multi-device wireless keyboard with low-profile scissor keys.",
+      "specs": {
+        "Wireless": "Bluetooth 5.0 / 2.4 GHz",
+        "Key mechanism": "Scissor",
+        "Battery": "2 × AAA"
+      },
+      "sourceUrl": "https://www.dell.com/support/product-details/en-us/product/dell-md-wireless-keyboard-kb700",
+      "imageUrl": "/product-images/keyboard.jpg",
+      "imageSourceUrl": "https://snpi.dell.com/snp/images/products/large/en-us~580-AKPT/580-AKPT.jpg",
+      "status": "Active"
+    },
+    {
+      "sku": "ADP-65-USBC",
+      "name": "Dell 65W USB-C GaN AC Adapter",
+      "category": "Power adapters",
+      "model": "AD226C",
+      "description": "A compact 65-watt GaN power adapter for USB-C notebooks.",
+      "specs": {
+        "Output power": "65 W",
+        "Connector": "USB-C",
+        "Type": "AC adapter"
+      },
+      "sourceUrl": "https://www.dell.com/en-gb/shop/clientpower/apd/dell-65w-usb-c-gan-ac-adapter/ad226c_65w_uk/-",
+      "imageUrl": "/product-images/adapter.jpg",
+      "imageSourceUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/adapters/dell-65w-usb-c-gan-ac-adapter-comal/mg/adapter-e565w-black-gallery-7.psd?fmt=jpeg&wid=540",
+      "status": "Active"
+    }
+  ],
+  "configurations": [
+    {
+      "id": "cfg-pro14",
+      "orderCode": "DEMO-P14-001",
+      "name": "Mobile workspace",
+      "chassis": "PB14250",
+      "systemSku": "PRO-14-PLUS",
+      "paths": [
+        {
+          "sku": "SSD-512-2230",
+          "module": "Storage",
+          "option": "512 GB M.2 NVMe SSD"
+        },
+        {
+          "sku": "RAM-16-DDR5",
+          "module": "Memory",
+          "option": "16 GB DDR5 SODIMM"
+        },
+        {
+          "sku": "ADP-65-USBC",
+          "module": "Power",
+          "option": "65 W USB-C adapter"
+        },
+        {
+          "sku": "SSD-512-2230",
+          "module": "Field service kit",
+          "option": "Replacement 512 GB SSD"
+        },
+        {
+          "sku": "DOCK-WD22TB4",
+          "module": "Desk accessories",
+          "option": "Thunderbolt dock"
+        },
+        {
+          "sku": "MS7421W",
+          "module": "Desk accessories",
+          "option": "Wireless mouse"
+        },
+        {
+          "sku": "KB700",
+          "module": "Desk accessories",
+          "option": "Previous keyboard bundle",
+          "archived": true
+        }
+      ]
+    },
+    {
+      "id": "cfg-pro16",
+      "orderCode": "DEMO-P16-001",
+      "name": "Office workspace",
+      "chassis": "PB16250",
+      "systemSku": "PRO-16-PLUS",
+      "paths": [
+        {
+          "sku": "SSD-512-2230",
+          "module": "Storage",
+          "option": "512 GB M.2 NVMe SSD"
+        },
+        {
+          "sku": "RAM-16-DDR5",
+          "module": "Memory",
+          "option": "16 GB DDR5 SODIMM"
+        },
+        {
+          "sku": "ADP-65-USBC",
+          "module": "Power",
+          "option": "65 W USB-C adapter"
+        },
+        {
+          "sku": "MON-U2723QE",
+          "module": "Display bundle",
+          "option": "27-inch UltraSharp 4K display"
+        },
+        {
+          "sku": "DOCK-WD22TB4",
+          "module": "Desk accessories",
+          "option": "Thunderbolt dock"
+        }
+      ]
+    },
+    {
+      "id": "cfg-archive",
+      "orderCode": "DEMO-RET-001",
+      "name": "Retired office workspace",
+      "chassis": "PB14250",
+      "archived": true,
+      "systemSku": "PRO-14-PLUS",
+      "paths": [
+        {
+          "sku": "SSD-512-2230",
+          "module": "Storage",
+          "option": "512 GB M.2 NVMe SSD"
+        },
+        {
+          "sku": "KB700",
+          "module": "Desk accessories",
+          "option": "Wireless keyboard"
+        }
+      ]
+    }
+  ]
+}

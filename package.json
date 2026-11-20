@@ -1,0 +1,26 @@
+{
+  "name": "dell-inventory-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.15.0"
+  },
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "node scripts/workspace.mjs dev",
+    "build": "npm run build --workspace frontend",
+    "start": "node scripts/workspace.mjs preview",
+    "catalog": "node backend/catalog/server.mjs",
+    "inventory": "node backend/inventory/server.mjs",
+    "test": "node --test",
+    "check:data": "node scripts/check-data.mjs",
+    "identity": "node backend/identity/server.mjs",
+    "account": "node backend/identity/provision.mjs"
+  },
+  "dependencies": {
+    "@libsql/client": "0.15.15"
+  }
+}

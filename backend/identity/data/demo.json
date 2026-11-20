@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "accountIds": [
+    "demo-analyst",
+    "demo-planner",
+    "demo-manager"
+  ],
+  "passwordHint": "InventoryDemo!26"
+}

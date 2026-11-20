@@ -1,0 +1,5 @@
+reviews.state.json
+reviews.state.json.*.tmp
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

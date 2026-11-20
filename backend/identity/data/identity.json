@@ -1,0 +1,68 @@
+{
+  "roles": [
+    {
+      "id": "analyst",
+      "label": "Inventory Analyst",
+      "permissions": [
+        "workspace:read",
+        "review:create"
+      ]
+    },
+    {
+      "id": "planner",
+      "label": "Supply Planner",
+      "permissions": [
+        "workspace:read",
+        "plan:propose",
+        "plan:execute"
+      ]
+    },
+    {
+      "id": "manager",
+      "label": "Inventory Manager",
+      "permissions": [
+        "workspace:read",
+        "plan:decide",
+        "audit:read"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "demo-analyst",
+      "name": "Avery Chen",
+      "email": "analyst@demo.local",
+      "role": "analyst",
+      "demoOnly": true,
+      "password": {
+        "algorithm": "scrypt",
+        "salt": "4a085b33b971935b4ebb41861112dd9e",
+        "hash": "9bbf4caa154a7a332bcee2409546bf53cdaa089d13c0a61d165a19075c0ac5f91e22f6ffb20cbdea1a53ce1f9fc72ca114746faf281c446685b3070f17d6ef0b"
+      }
+    },
+    {
+      "id": "demo-planner",
+      "name": "Jordan Lewis",
+      "email": "planner@demo.local",
+      "role": "planner",
+      "demoOnly": true,
+      "password": {
+        "algorithm": "scrypt",
+        "salt": "c417b50a7f1e249592d9f73ff0321c57",
+        "hash": "dd3365fc589b0d77c1a7ac082e8c14357ec0ed857928fe5c2b752fbdf9e1e7956bb103fabb5b5303a2d11e4fa8a45c10516573a64dce7b70953f6d447b0084e6"
+      }
+    },
+    {
+      "id": "demo-manager",
+      "name": "Maya Patel",
+      "email": "manager@demo.local",
+      "role": "manager",
+      "demoOnly": true,
+      "password": {
+        "algorithm": "scrypt",
+        "salt": "6fb74675cd6714fe5076750cd29d3c7a",
+        "hash": "5101f29f626045514ab69f5bf7744f661f6d1e4f6e15acd732a6f11dbacd7c381a328569aa3750fd1e7f3feb2f2ef478f78d08c5b5b8374b109109ef92e3f02e"
+      }
+    }
+  ]
+}
