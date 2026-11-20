@@ -1,0 +1,1 @@
+# Dell-Idle-Inventory-and-Config-Explorer
