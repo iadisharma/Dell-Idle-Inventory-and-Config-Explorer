@@ -2,6 +2,49 @@
 
 A React and Node.js portfolio project for investigating idle inventory and acting on it. Trace a component to Dell system configurations, propose a stock issue, obtain an independent decision and follow the resulting units through the ledger. The catalog contains real Dell products, photos and source links. Stock, estimated costs, order codes, approvals and warehouses are illustrative data.
 
+## Demo screenshots
+
+Screenshots from the running app with the included synthetic inventory and demo accounts. Follow the [local setup](#run-locally) to try it yourself.
+
+**Inventory overview.** Find idle stock across warehouses, compare aging bands, and see which positions link to system configurations.
+
+![Inventory overview showing 135 idle units, warehouse filters, stock aging, and the searchable stock table](docs/screenshots/inventory-overview.png)
+
+<details>
+<summary>View five more demo screens: sign-in, catalog, configurations, reviews, and insights</summary>
+
+### Demo sign-in
+
+Choose an analyst, planner, or manager account to explore the role-based workflow.
+
+![Demo sign-in page with analyst, planner, and manager role selections](docs/screenshots/sign-in.png)
+
+### Product catalog
+
+Browse Dell product photos and SKUs, then open specifications and configuration mappings.
+
+![Product catalog displaying nine Dell products with photos, categories, SKUs, and detail links](docs/screenshots/product-catalog.png)
+
+### Configuration explorer
+
+Trace the Austin SSD stock position to two order codes and three component paths without double-counting its 40 physical units.
+
+![SSD stock details showing quantity, idle days, stock history, and linked configuration paths](docs/screenshots/configuration-explorer.png)
+
+### Review queue
+
+Track case owners, routes, and statuses from investigation through approval and resolution. Managers and planners can filter to their available actions.
+
+![Manager review queue with approved, awaiting approval, in progress, and resolved cases](docs/screenshots/review-queue.png)
+
+### Inventory insights
+
+Compare weekly stock trends, warehouse exposure, and priority positions ranked by estimated idle inventory value.
+
+![Inventory insights dashboard with idle value, weekly stock trends, warehouse exposure, and priority stock](docs/screenshots/inventory-insights.png)
+
+</details>
+
 ## Run locally
 
 Use Node.js 18.15 or later and npm. From the project root, run
