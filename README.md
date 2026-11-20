@@ -1,4 +1,6 @@
-# Dell Inventory Operations Workspace
+# Dell Inventory Operations Workspace 
+
+Disclaimer : This does not belong to Dell and is a conceptual Project for demonstration purpose only and all the data that is present is open source and taken from the internet available in the public domain
 
 A React and Node.js portfolio project for investigating idle inventory and acting on it. Trace a component to Dell system configurations, propose a stock issue, obtain an independent decision and follow the resulting units through the ledger. The catalog contains real Dell products, photos and source links. Stock, estimated costs, order codes, approvals and warehouses are illustrative data.
 
